@@ -26,7 +26,7 @@
 	<meta name="twitter:card" content="summary_large_image">
 	
 	<!-- FAVICONS ICON -->
-	<link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtJL11U6jc8T2jVUhagB_cE_9Vl7GERU_TqWBXEaF520gzaRWIz6yPY5EiC8yMjuLtqQE&usqp=CAU">
+	<link rel="icon" type="image/x-icon" href="images/fav-icon.png">
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,8 +86,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 }
 .product-box.style-4 .sale-box:after {
-    background-image: url(images/shap.svg);
-   
+    background-image: url(images/shap.svg); 
+}
+.header-nav .nav > li.menu-item-has-children > a:after, .header-nav .nav > li.sub-menu-down > a:after {
+    background-image: url(images/star.svg);
+}
+span.word-rotate, svg.badge__emoji, .icon-button , .text-row.word-box.border-white{
+	display: none;
 }
 	</style>
 </head>	
@@ -107,7 +112,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 					
 					<!-- Website Logo -->
 					<div class="logo-header logo-dark me-md-5">
-						<a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+						<a href="index.html"><img src="images/logo.png" alt="logo"></a>
 					</div>
 					
 					<!-- Nav Toggle Button -->
@@ -148,78 +153,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</ul>
 								</div>
 							</li>
-							<li class="has-mega-menu sub-menu-down">
-								<a href="javascript:void(0);"><span>Shop</span><i class="fas fa-chevron-down tabindex" ></i></a>
-								<div class="mega-menu shop-menu">
-									<ul>
-										<li class="side-left">
-											<ul>
-												<li><a href="javascript:void(0);" class="menu-title">Shop Structure</a>
-													<ul>
-														<li><a href="shop-standard.html">Shop Standard</a></li>
-														<li><a href="shop-list.html">Shop List</a></li>
-														<li><a href="shop-with-category.html">Shop With Category</a></li>
-														<li><a href="shop-filters-top-bar.html">Shop Filters Top Bar</a></li>
-														<li><a href="shop-sidebar.html">Shop Sidebar</a></li>
-														<li><a href="shop-style-1.html">Shop Style 1</a></li>
-														<li><a href="shop-style-2.html">Shop Style 2</a></li>
-													</ul>
-												</li>
-												<li><a href="javascript:void(0);" class="menu-title">Product Structure</a>
-													<ul>
-														<li><a href="product-default.html">Default</a></li>
-														<li><a href="product-thumbnail.html">Thumbnail</a></li>
-														<li><a href="product-grid-media.html">Grid Media</a></li>
-														<li><a href="product-carousel.html">Carousel</a></li>
-														<li><a href="product-full-width.html">Full Width</a></li>
-													</ul>
-												</li>
-												<li><a href="javascript:void(0);" class="menu-title">Shop Pages</a>
-													<ul>						
-														<li><a href="shop-wishlist.html">Wishlist</a></li>
-														<li><a href="shop-cart.html">Cart</a></li>
-														<li><a href="shop-checkout.html">Checkout</a></li>
-														<li><a href="shop-compare.html">Compare</a></li>
-														<li><a href="shop-order-tracking.html">Order Tracking</a></li>
-														<li><a href="login.html">Login</a></li>
-														<li><a href="registration.html">Registration</a></li>
-													</ul>
-												</li>
-												<li class="month-deal">
-													<div class="clearfix me-3">
-														<h3>Deal of the month</h3>
-														<p class="mb-0">Yes! Send me exclusive offers, personalised, and unique gift ideas, tips for shopping on Pixio <a href="shop-standard.html" class="dz-link-2">View All Products</a></p>
-													</div>
-													<div class="sale-countdown">
-														<div class="countdown text-center">
-															<div class="date">
-																<span class="time days text-primary"></span>
-																<span class="work-time">Days</span>
-															</div>
-															<div class="date">
-																<span class="time hours text-primary"></span>
-																<span class="work-time">Hours</span>
-															</div>
-															<div class="date">
-																<span class="time mins text-primary"></span>
-																<span class="work-time">Minutess</span>
-															</div>
-															<div class="date">
-																<span class="time secs text-primary"></span>
-																<span class="work-time">Second</span>
-															</div>
-														</div>
-													</div>
-												</li>
+							<li class="sub-menu-down">
+								<a href="javascript:void(0);"><span >Shop</span><i class="fas fa-chevron-down tabindex" ></i></a>
+								<!-- <div class="mega-menu shop-menu"> -->
+									<ul  class="sub-menu">
+										<li>
+											<ul>	
+												<li><a href="shop.html">Shop</a></li>
+
+												<li><a href="shop-wishlist.html">Wishlist</a></li>
+												<li><a href="shop-cart.html">Cart</a></li>
+												<li><a href="shop-checkout.html">Checkout</a></li>
+												<li><a href="shop-compare.html">Compare</a></li>
+												<li><a href="shop-order-tracking.html">Order Tracking</a></li>
+													<li><a href="login.html">Login</a></li>
+													<li><a href="registration.html">Registration</a></li>
 											</ul>
 										</li>
-										<li class="side-right">
-											<div class="adv-media">
-												<img src="images/adv-1.png" alt="/">
-											</div>
-										</li>
 									</ul>
-								</div>
+								<!-- </div> -->
 							</li>
 							<li class="has-mega-menu sub-menu-down auto-width">
 								<a href="javascript:void(0);"><span>Blog</span><i class="fas fa-chevron-down tabindex"></i></a>
@@ -319,7 +271,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</ul>
 								</div>
 							</li>
-							<li class="has-mega-menu sub-menu-down">
+
+						<!--	<li class="has-mega-menu sub-menu-down">
 								<a href="javascript:void(0);"><span>Portfolio</span><i class="fas fa-chevron-down tabindex"></i></a>
 								<div class="mega-menu portfolio-menu">
 									<ul>
@@ -400,6 +353,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</ul>
 								</div>
 							</li>
+						-->
+
+
 							<li class="has-mega-menu sub-menu-down wide-width">
 								<a href="javascript:void(0);"><span>Pages</span><i class="fas fa-chevron-down tabindex"></i></a>
 								<div class="mega-menu">
@@ -1180,7 +1136,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 										<div class="dz-media">
 											<img src="images/shop/product/clothes/1.png" alt="image">
 										</div>
-										<h6 class="product-name"><a href="#">Shirts</a></h6>
+										<h6 class="product-name"><a>Shirts</a></h6>
 									</div>
 								</div>
 								<div class="swiper-slide">
@@ -1188,7 +1144,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 										<div class="dz-media">
 											<img src="images/shop/product/clothes/2.png" alt="image">
 										</div>
-										<h6 class="product-name"><a href="#">Carrot-Jeans</a></h6>
+										<h6 class="product-name"><a>Carrot-Jeans</a></h6>
 									</div>
 								</div>
 								<div class="swiper-slide">
@@ -1196,7 +1152,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 										<div class="dz-media">
 											<img src="images/shop/product/clothes/3.png" alt="image">
 										</div>
-										<h6 class="product-name"><a href="#">t-Shirts</a></h6>
+										<h6 class="product-name"><a>t-Shirts</a></h6>
 									</div>
 								</div>
 								<div class="swiper-slide">
@@ -1204,7 +1160,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 										<div class="dz-media">
 											<img src="images/shop/product/clothes/4.png" alt="image">
 										</div>
-										<h6 class="product-name"><a href="#">Baggy-Jeans</a></h6>
+										<h6 class="product-name"><a>Baggy-Jeans</a></h6>
 									</div>
 								</div>
 								<div class="swiper-slide">
@@ -1212,7 +1168,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 										<div class="dz-media">
 											<img src="images/shop/product/clothes/6.png" alt="image">
 										</div>
-										<h6 class="product-name"><a href="#">Polo-Shirts</a></h6>
+										<h6 class="product-name"><a>Polo-Shirts</a></h6>
 									</div>
 								</div>
 								<div class="swiper-slide">
@@ -1220,7 +1176,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 										<div class="dz-media">
 											<img src="images/shop/product/clothes/5.png" alt="image">
 										</div>
-										<h6 class="product-name"><a href="#">Ripped-Jeans</a></h6>
+										<h6 class="product-name"><a>Ripped-Jeans</a></h6>
 									</div>
 								</div>
 							
@@ -1260,14 +1216,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 								</div>
 							</div>
 						</div>
-						<a class="icon-button" href="shop-standard.html">
-							<div class="text-row word-rotate-box c-black border-white">
-								<span class="word-rotate">More Collection Explore </span>
-								<svg class="badge__emoji" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 35 35" fill="none">
-									<path d="M32.2645 16.9503H4.08145L10.7508 10.4669C11.2604 9.97176 10.5046 9.1837 9.98813 9.68289C9.98815 9.68286 2.35193 17.1063 2.35193 17.1063C2.12911 17.3092 2.14686 17.6755 2.35196 17.8903C2.35193 17.8903 9.98815 25.3169 9.98815 25.3169C10.5021 25.81 11.2622 25.0367 10.7508 24.5328C10.7508 24.5329 4.07897 18.0441 4.07897 18.0441H32.2645C32.9634 18.0375 32.9994 16.9636 32.2645 16.9503Z" fill="white"></path>
-								</svg>
-							</div>
-						</a>
+						
 					</div>
 				</div>
 			</div>
@@ -1283,7 +1232,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 							<div class="dz-media h-100">	
 								<img src="images/women.png" alt="">
 							</div>	
-							<a href="shop-list.html" class="btn btn-outline-secondary btn-light btn-xl">Woman collection</a>	
+							<a href="shop.html" class="btn btn-outline-secondary btn-light btn-xl">Woman collection</a>	
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12 align-self-center">
@@ -1307,7 +1256,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 											<img src="images/shop/product/medium/1.png" alt="image">
 										</div>
 										<div class="dz-content">
-											<a href="shop-list.html" class="btn btn-outline-secondary btn-light btn-md">Child Fashion</a>
+											<a href="shop.html" class="btn btn-outline-secondary btn-light btn-md">Child Fashion</a>
 										</div>
 									</div>
 								</div>
@@ -1317,7 +1266,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 											<img src="images/shop/product/medium/2.png" alt="image">
 										</div>
 										<div class="dz-content">
-											<a href="shop-list.html" class="btn btn-outline-secondary btn-light btn-md">Man collection</a>
+											<a href="shop.html" class="btn btn-outline-secondary btn-light btn-md">Man collection</a>
 										</div>
 										<span class="sale-badge">50%<br>Sale <img src="images/star.png" alt=""></span>
 									</div>
@@ -1443,7 +1392,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 								</li>
 								<li data-filter=".Tops" class="btn">
 									<input type="radio">
-									<a href="javascript:void(0);">Tops</a> 
+									<a href="javascript:void(0);">Formal</a> 
 								</li>
 								<li data-filter=".Outerwear" class="btn">
 									<input type="radio">
@@ -1479,8 +1428,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</div>							
 								</div>
 								<div class="dz-content">
-									<h5 class="title"><a href="shop-list.html">Cozy Knit Cardigan Sweater</a></h5>
-									<h5 class="price">$80</h5>
+									<h5 class="title"><a href="shop-list.html">Women Fit and Flare Black Dress</a></h5>
+									<h5 class="price">$124</h5>
 								</div>
 								<div class="product-tag">
 									<span class="badge ">Get 20% Off</span>
@@ -1535,8 +1484,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</div>									
 								</div>
 								<div class="dz-content">
-									<h5 class="title"><a href="shop-list.html">Classic Denim Skinny Jeans</a></h5>
-									<h5 class="price">$80</h5>
+									<h5 class="title"><a href="shop-list.html">Black Polka Dot Dress for womens</a></h5>
+									<h5 class="price">$164</h5>
 								</div>
 								<div class="product-tag">
 									<span class="badge ">Get 20% Off</span>
@@ -1563,8 +1512,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</div>									
 								</div>
 								<div class="dz-content">
-									<h5 class="title"><a href="shop-list.html">Athletic Mesh Sports Leggings</a></h5>
-									<h5 class="price">$80</h5>
+									<h5 class="title"><a href="shop-list.html">Casual Leather Jacket For Men</a></h5>
+									<h5 class="price">$180</h5>
 								</div>
 								<div class="product-tag">
 									<span class="badge ">Get 20% Off</span>
@@ -1619,8 +1568,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</div>								
 								</div>
 								<div class="dz-content">
-									<h5 class="title"><a href="shop-list.html">Satin Wrap Party Blouse</a></h5>
-									<h5 class="price">$80</h5>
+									<h5 class="title"><a href="shop-list.html">Long Coat Belt SLim Outerwear</a></h5>
+									<h5 class="price">$229</h5>
 								</div>
 								<div class="product-tag">
 									<span class="badge ">Get 20% Off</span>
@@ -1647,8 +1596,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</div>									
 								</div>
 								<div class="dz-content">
-									<h5 class="title"><a href="shop-list.html">Plaid Wool Winter Coat</a></h5>
-									<h5 class="price">$80</h5>
+									<h5 class="title"><a href="shop-list.html">Beige Suit with White Knit Sweater</a></h5>
+									<h5 class="price">$259</h5>
 								</div>
 								<div class="product-tag">
 									<span class="badge ">Get 20% Off</span>
@@ -1675,8 +1624,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									</div>								
 								</div>
 								<div class="dz-content">
-									<h5 class="title"><a href="shop-list.html">Water-Resistant Windbreaker Jacket</a></h5>
-									<h5 class="price">$80</h5>
+									<h5 class="title"><a href="shop-list.html">White t with High-Waisted Pants</a></h5>
+									<h5 class="price">$199</h5>
 								</div>
 								<div class="product-tag">
 									<span class="badge ">Get 20% Off</span>
@@ -2202,7 +2151,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									<div class="main-content">
 										<span class="offer">20% Off</span>
 										<h2 class="product-name">Luxury Dresses</h2>
-										<a href="shop-list.html" class="btn btn-outline-secondary btn-rounded btn-lg">Collect Now</a>
 									</div>
 								</div>
 							</div>
@@ -2214,7 +2162,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									<div class="main-content">
 										<span class="offer">Sale Up to 50% Off</span>
 										<h2 class="sub-title1">Summer <span class="year">2024</span></h2>
-										<a href="shop-list.html" class="btn btn-outline-secondary btn-rounded btn-lg">Collect Now</a>
 									</div>
 								</div>
 							</div>
@@ -2226,7 +2173,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 									<div class="main-content">
 										<span class="offer">20% Off</span>
 										<h2 class="sub-title2"><span class="bg-title">Male </span>Collection</h2>
-										<a href="shop-list.html" class="btn btn-outline-secondary btn-rounded btn-lg">Collect Now</a>
 									</div>
 								</div>
 							</div>
@@ -2794,7 +2740,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 					<div class="col-xl-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
 						<div class="widget widget_about me-2">
 							<div class="footer-logo logo-white">
-								<a href="index.html"><img src="images/logo.svg" alt=""></a> 
+								<a href="index.html"><img src="images/logo.png" alt=""></a> 
 							</div>
 							<ul class="widget-address">
 								<li>
@@ -2923,7 +2869,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 	</footer>
 	<!-- Footer End -->
 	
-	<button class="scroltop" type="button"><i class="fas fa-arrow-up"></i></button>
+	<button class="scroltop" type="button"><i class="fas fa-arrow-up bi bi-arrow-up-circle-fill"></i></button>
 	
 	<!-- Quick Modal Start -->
 	<div class="modal quick-view-modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
